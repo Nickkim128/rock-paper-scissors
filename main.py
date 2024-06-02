@@ -19,7 +19,7 @@ def play():
 def is_win(player, opponent):
     # return true is the player beats the opponent
     # winning conditions: r > s, s > p, p > r
-    if (player == 'r' and opponent == 's') or (player == 's' and opponent == 'p') or (player == 'p' and opponent == 'r'):
+    if #fill in:
         return True
     return False
 
@@ -28,7 +28,7 @@ def play_best_of(n):
     # to win, you must win ceil(n/2) games (ie 2/3, 3/5, 4/7)
     player_wins = 0
     computer_wins = 0
-    wins_necessary = math.ceil(n/2)
+    wins_necessary = # fill in
     while player_wins < wins_necessary and computer_wins < wins_necessary:
         result, user, computer = play()
         # tie
